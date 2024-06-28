@@ -13,7 +13,7 @@ def main() :
   st.dataframe(house)
 
   st.write('Metrics')
-  st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
+  st.metric(label="Temperature", value="30 °C", delta="-1.4 °F")
 
 if __name__ == '__main__' : 
   main()
