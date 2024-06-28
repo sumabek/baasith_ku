@@ -1,7 +1,7 @@
 import streamlit as st 
 import pandas as pd
-import requests
-from st_aggrid import AgGrid
+# import requests
+# from st_aggrid import AgGrid
 
 house = pd.read_csv('house_clean.csv')
 
@@ -17,8 +17,8 @@ def main() :
   st.write('Metrics')
   st.metric(label="Temperature", value="30.3 °C", delta="1.4 °C")
 
-  AgGrid(house)
-  st.table([x for x in range(1,5)])
+  # AgGrid(house)
+  # st.table([x for x in range(1,5)])
 
 if __name__ == '__main__' : 
   main()
