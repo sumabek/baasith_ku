@@ -65,17 +65,17 @@ def main() :
   expander = st.expander("Klik Untuk Detail ")
   expander.write('Anda Telah Membuka Detail')
 
- with st.form("Data Diri"):
-       st.write("Inside the form")
-       slider_val = st.slider("Form slider")
-       checkbox_val = st.checkbox("Form checkbox")
+with st.form("Data Diri"):
+   st.write("Inside the form")
+   slider_val = st.slider("Form slider")
+   checkbox_val = st.checkbox("Form checkbox")
 
-       # Every form must have a submit button.
-       submitted = st.form_submit_button("Submit")
-       if submitted:
-           st.write("slider", slider_val, "checkbox", checkbox_val)
+   # Every form must have a submit button.
+   submitted = st.form_submit_button("Submit")
+   if submitted:
+       st.write("slider", slider_val, "checkbox", checkbox_val)
 
-    st.write("Outside the form")
+st.write("Outside the form")
 
 if __name__ == '__main__' : 
   main()
