@@ -5,7 +5,7 @@ from st_aggrid import AgGrid
 
 house = pd.read_csv('house_clean.csv')
 
-def main() : 
+def main() :
   st.header('Halaman Streamlit Muhammad Abdul Baasith')
   st.subheader('This is SubHeader')
   st.markdown('# Rendering Markdown ')
